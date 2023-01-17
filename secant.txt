@@ -1,0 +1,16 @@
+secant method algorithm:
+
+1. START
+2. Define f(x) and Error(E)
+3. Input initial assumption x1 and x2;
+4. Calculate : 
+    x3= f(x2)*x1 -f(x1)*x2 / f(x2)-f(x1)
+
+5. Now assign :
+    x1=x2
+    x2=x3
+
+6. Now if |x3-x1|>E ; goto step 4 else: 
+                                display root as x3
+
+7. STOP
