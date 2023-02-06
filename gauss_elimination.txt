@@ -1,0 +1,7 @@
+1. Start.
+2. Read the number of unknown; n.
+3. Read augmented matrix A of n (n+1) size.
+4. Transform augmented matrix A to upper triangular matrix by row operation.
+5. Obtain solution by back substitution.
+6. Display results.
+7. Stop.

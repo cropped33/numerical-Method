@@ -1,0 +1,15 @@
+Solution of non linear equation using Newton Rapson Method:
+
+1. Start
+2. Define function as f(x).
+3. Define first derivative of f(x) as g(x).
+4. Input initial guess x0, tolerable error E, and max
+ number of iterations N.
+5. If g(x)=0, display "Mathematical Error" and exit.
+    else calculate :
+                    x1= x0 - f(x0)/g(x0), increment
+                     iteration counter i = i+1.
+6. If i>N, display "Non Convergent" and EXIT.
+7. if |f(x1)| > E, set x0 = x1 and repeat from 6.
+8. Display roots as x1.
+9. Stop. 
