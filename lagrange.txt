@@ -1,0 +1,20 @@
+5. Implement Lagrange's Interpolation.
+
+Algorithm:
+1. Start.
+2. Read number of data n.
+3. Read data X[i] and Y[i] for i=1 to n.
+4. Read Xp for which Yp is to be determined.
+5. Initialize Yp =0.
+
+6. for i= 1 to n 
+    set p=1
+    for j=1 to n 
+        if i != j then
+            calculate p = p*(Xp-Xj)/ (Xi-Xj)
+            Next j
+        calculate Yp = Yp + p*Yi
+        Next i
+
+    7. Display Yp.
+    8. STOP

@@ -5,7 +5,7 @@
 // #define f x *x *x - 2 * x - 5
 float f(float x)
 {
-    return x * x * x - 2 * x - 5;
+    return x * x  + 4 * x  - 18;
 }
 
 int main()

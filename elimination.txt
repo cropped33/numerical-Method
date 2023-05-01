@@ -1,0 +1,46 @@
+4. Solution of System of linear equations using Gauss Elimination Method.
+
+Algorithm:
+1. Start. 
+
+2. Input the augmented matrix :
+    for i=1 to n 
+        for j=1 to n+1
+            Read A[i][j]
+            Next j
+        Next i
+
+3. Apply the Elimination to obtain upper triangular matrix : 
+    for i=1 to n-1
+        If A[i][i]=0;
+            print "Mathematical Error" and STOP 
+        for j=i+1 to n 
+            ratio = A[j][i]/A[i][i]
+            for k=1 to n+1
+                A[j][k]= A[j][k] - ratio* A[i][k]
+                Next k
+            Next j
+        Next i
+    
+4. Obtain Solution by back substitution : 
+    X[n]= A[n][n+1]/A[n][n]
+    for i = n-1 to i(step - 1)
+        X[i]= A[i][n+1]
+            for j = i+1 to N    
+                X[i]=X[i]-A[i][j] * X[j]
+                Next j
+            X[i]= X[i]/A[i][i]
+            Next i
+        
+5. Display Solution
+    for i=1 to N
+        print X[i]
+        Nexti
+
+6. Stop
+
+
+Given:
+2 3 4 20
+5 4 3 22
+3 5 4 25

@@ -4,7 +4,7 @@
 
 float function(float x)
 {
-    return x * x * x - x - 2;
+    return x * x  - x - 2;
 }
 
 int main()
@@ -29,5 +29,5 @@ int main()
         else
             b = c;
         printf("****************************\n");
-    } while ((b - a) >= 0.000005);
+    } while ((b - a) >= 0.0005);
 }
